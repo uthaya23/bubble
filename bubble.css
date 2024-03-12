@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    backdrop-filter: 7px;
+
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 30px;
+    margin-left: 60px;
+}
+.heading{
+    text-align: center;
+    margin-top: 15%;
+    line-height: 60px; 
+    color: white;
+    font-size: xx-large;
+}
+.sidebar{
+    width: 50px;
+    height: 100VH;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.9;
+    backdrop-filter: blur(50px);
+    background: black;
+}
+.logo{
+    width: 150px;
+}
+.menu{
+    height: 30px;
+    width: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+.soc{
+    height: 40px;
+    width: 40px;
+    margin-top: 180px;
+    margin-left: 5px;
+}
+.soc1{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+.soc2{
+    margin-top: 85px;
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+.soc3{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+.bubble{
+    position: absolute;
+    display: flex;
+   
+    bottom: 0;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 10px;
+
+}
+.bubble img{
+    width: 50px;
+    height: 50px;
+    animation: bubble 7s infinite linear;
+    
+}
+@keyframes bubble{
+0%{
+    opacity: 0%;
+    transform: translateY(0);
+}
+25%{
+    opacity: 0.5;
+}
+50%{
+    opacity: 1;
+
+}
+75%{
+    opacity: 0.8;
+}
+100%{
+    opacity: 0%;
+    transform: translateY(-90vh);
+}
+}
+.bubble img:nth-child(2){
+    width: 8%;
+    height: 8%;
+    animation-delay:1s;
+    opacity: 0;
+}
+.bubble img:nth-child(3){
+    animation-delay: 2s;
+    opacity: 0;
+}
+.bubble img:nth-child(4){
+    animation-delay: 1.5s;
+    opacity: 0;
+    width: 7%;
+    height: 7%;
+}
+.bubble img:nth-child(5){
+    opacity: 0;
+    animation-delay: 3s;
+    
+}
+.bubble img:nth-child(6){
+    opacity: 0;
+    animation-delay: 4s;
+}
+.bubble img:nth-child(7){
+    opacity: 0;
+    animation-delay: 5s;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  @media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+    }
+    .sidebar{
+        display: none;
+    }
+    .heading{
+        text-align: center;
+        margin-top: 15%;
+        line-height: 60px; 
+        color: white;
+        font-size: 2vh;
+    }
+    .nav{
+        align-items: center;
+        display: flex;
+        justify-content: space-between ;
+    } 
+    button{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    backdrop-filter: 7px;
+
+}
+.logo{
+    margin-left: -20%;
+}
+
+  }
